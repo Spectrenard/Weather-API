@@ -44,6 +44,7 @@ function fetchData(city) {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
+                    // Changer ici le type de retour à void
                     resultContainer.innerHTML = "Chargement..."; // Indicateur de chargement
                     url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&appid=").concat(API_KEY, "&units=metric");
                     _a.label = 1;

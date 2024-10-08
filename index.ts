@@ -11,6 +11,7 @@ interface WeatherData {
 }
 
 async function fetchData(city: string): Promise<void> {
+  // Changer ici le type de retour à void
   resultContainer.innerHTML = "Chargement..."; // Indicateur de chargement
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
   try {
